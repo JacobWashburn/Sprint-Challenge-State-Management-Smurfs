@@ -4,7 +4,7 @@ It helps solve the problem of passing global variables around in a react app. Yo
 
 1. In your own words, describe `actions`, `reducers` and the `store` and their role in Redux. What does each piece do? Why is the store known as a 'single source of truth' in a redux application?
 
-Actions- A. It performs a feature, like - Add, remove, toggle.
+Actions- A. It performs a feature, like - Add, remove, toggle. creates a dispatch with type and payload
          B. Its role: contain properties related to some action that happens inside App.
 
 Reducers- A. Its Kind of like packaging like items together.

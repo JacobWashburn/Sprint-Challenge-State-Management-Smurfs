@@ -7,7 +7,8 @@ import {
     POST_SMURF_FAILURE,
     PUT_SMURF_START,
     PUT_SMURF_SUCCESS,
-    PUT_SMURF_FAILURE
+    PUT_SMURF_FAILURE,
+    RESET_EDITING
 } from '../Actions';
 
 const intialState = {
@@ -48,17 +49,23 @@ const reducer = (state = intialState, action) => {
                 ...state,
                 isEditing: true,
                 id: action.payload
-            }
+            };
         case PUT_SMURF_SUCCESS:
             return {
                 ...state,
                 isEditing: false,
-            }
+            };
         case PUT_SMURF_FAILURE:
             return {
                 ...state,
                 isEditing: false,
                 error: action.payload
+            };
+        case RESET_EDITING:
+            return {
+                ...state,
+                isEditing: false,
+                id: ''
             }
         default:
             return state;

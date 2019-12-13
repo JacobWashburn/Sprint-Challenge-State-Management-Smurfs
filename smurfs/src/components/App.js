@@ -12,6 +12,7 @@ const App = props => {
 
     useEffect(() => {
         props.getSmurfs();
+        console.log('app props', props);
     }, []);
 
     return (

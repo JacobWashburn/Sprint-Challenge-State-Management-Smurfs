@@ -5,6 +5,7 @@ import SmurfCard from './SmurfCard';
 const ListWrapper = styled.div`
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 `;
 
 const SmurfList = ({smurfList}) => {
