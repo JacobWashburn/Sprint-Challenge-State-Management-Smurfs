@@ -31,7 +31,6 @@ const SmurfForm = props => {
         age: '',
         height: ''
     });
-    console.log({newSmurf});
     const onChangeHandler = e => {
         setNewSmurf({...newSmurf, [e.target.name]: e.target.value});
     };

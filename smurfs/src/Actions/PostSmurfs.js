@@ -7,13 +7,13 @@ export const POST_SMURF_FAILURE = 'POST_SMURF_FAILURE';
 
 export const postSmurf = smurf => dispatch => {
     dispatch({type: POST_SMURF_START});
-    axios.post('http://localhost:3333/smurfs',smurf)
+    axios.post('http://localhost:3333/smurfs', smurf)
         .then(re => {
-            console.log('post re', re)
-            dispatch({type:POST_SMURF_SUCCESS,payload:re})
-            getSmurfs()
+            console.log('post re', re);
+            dispatch({type: POST_SMURF_SUCCESS, payload: re});
+            getSmurfs();
         })
         .catch(er => {
-            dispatch({type:POST_SMURF_FAILURE,payload:er.message})
-        })
+            dispatch({type: POST_SMURF_FAILURE, payload: er.message});
+        });
 };
