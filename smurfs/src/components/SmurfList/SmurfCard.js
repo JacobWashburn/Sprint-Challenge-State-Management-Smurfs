@@ -25,15 +25,15 @@ const Form = styled.form`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border: 1px solid forestgreen;
-  border-radius: 1rem;
+  border-top: 1px solid forestgreen;
 `;
 const Label = styled.label`
-
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 `;
 const Input = styled.input`
-  width: 35%;
-  margin: 0 auto;
+  width: 65%;
 `;
 const Button = styled.button`
   width: 35%;
