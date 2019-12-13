@@ -3,7 +3,8 @@ import styled from 'styled-components';
 import SmurfCard from './SmurfCard';
 
 const ListWrapper = styled.div`
-  
+  display: flex;
+  justify-content: center;
 `;
 
 const SmurfList = ({smurfList}) => {
